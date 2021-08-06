@@ -56,7 +56,7 @@ function App() {
       setSummary({ totalItems, totalAmount, discount, typeDiscount})
       localStorage.setItem('store', JSON.stringify(store))
     }
-  }, [store])
+  }, [store, deletedItems])
   
   useEffect(() => {
     if(summary){
